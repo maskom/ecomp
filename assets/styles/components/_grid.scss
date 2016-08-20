@@ -3,6 +3,9 @@
   @include make-sm-column($main-sm-columns);
   .sidebar-primary & {
     @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+    @media (min-width: $screen-sm) {
+      padding-right: 50px;
+    }
   }
 }
 .sidebar {

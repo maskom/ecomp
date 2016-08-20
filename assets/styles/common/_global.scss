@@ -1,1 +1,18 @@
-
+body{}
+h1 {
+  //font-family: $font-family-h1;
+  font-weight: 700;
+}
+.copyright {
+  p {
+    margin: 15px;
+  }
+}
+.bg-primary {
+  // Given the contrast here, this is the only class to have its color inverted
+  // automatically.
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}

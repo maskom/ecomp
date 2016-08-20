@@ -18,15 +18,15 @@
         </button>
         <a class="brand navbar-brand visible-xs" href="<?= esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
       </div>
-      <div class="collapse navbar-collapse navbar-right" id="nav-primary-collapse">
+      <div class="collapse navbar-collapse" id="nav-primary-collapse">
         <?php
         if (has_nav_menu('primary_navigation')) :
-          //wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav','fallback_cb' => 'wp_bootstrap_navwalker::fallback', 'walker' => new wp_bootstrap_navwalker()]);
-
             wp_nav_menu( array(
                     'menu'              => 'primary_navigation',
                     'theme_location'    => 'primary_navigation',
                     'depth'             => 2,
+                    'container'         => 'div',
+                    'container_class'   => 'wrap-primary-nav',
                     'menu_class'        => 'nav navbar-nav',
                     'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                     'walker'            => new wp_bootstrap_navwalker())
