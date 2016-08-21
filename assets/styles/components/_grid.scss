@@ -11,3 +11,13 @@
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
 }
+
+.section-footer-nav {
+  @include make-sm-column($section-footer-nav);
+  .has-sidebar-footer & {
+    @include make-sm-column($section-footer-nav - $section-sidebar-footer);
+  }
+}
+.section-sidebar-footer {
+  @include make-sm-column($section-sidebar-footer);
+}

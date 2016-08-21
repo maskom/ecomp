@@ -1,3 +1,20 @@
 #footer {
   margin-top: 40px;
+  #footer-nav-widget {
+    a {
+      color: $text-color;
+    }
+
+    .section-footer-nav {
+      .nav {
+        >li {
+          float: left;
+          >a {
+            font-size: $font-size-h3;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
 }
